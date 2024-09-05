@@ -1,14 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .menu a {
     cursor: pointer;
 }
 
 .page {
-    min-height: 400px;
-}
-.page:nth-child(2n) {
-    background-color: #ccc;
+    min-height: 100vh; /* Adjust as needed */
+    padding: 20px;
 }
 
-.page:nth-child(2n + 1) {
+/* .page:nth-child(2n) {
+    background-color: #ccc;
+} */
+
+/* .page:nth-child(2n + 1) {
     background-color: #0c0c0c;
-}
+} */
