@@ -6,15 +6,11 @@ html {
     cursor: pointer;
 }
 
-.page {
-    min-height: 100vh; /* Adjust as needed */
+section.page {
     padding: 20px;
+    scroll-margin-top: 92px;
+    min-height: 300px;
 }
-
-/* .page:nth-child(2n) {
-    background-color: #ccc;
-} */
-
-/* .page:nth-child(2n + 1) {
-    background-color: #0c0c0c;
-} */
+.page.home {
+    height: 600px;
+}

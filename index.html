@@ -1,87 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
-  <!-- Tailwind CSS via CDN -->
-  <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet"> -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body class="bg-gray-100">
-
-  <!-- Navbar -->
-  <nav class="bg-slate-950 shadow-lg sticky top-0 z-50">
-    <div class="container mx-auto p-4">
-      <div class="flex md:justify-center items-center">
-        <div class="menu hidden md:flex space-x-6 items-center">
-          <a class="text-white hover:text-slate-400 focus:slate-400 cursor-pointer" href="#home">Home</a>
-          <a class="text-white hover:text-slate-400 focus:slate-400 cursor-pointer" href="#about">About</a>
-          <a class="text-white hover:text-slate-400 focus:slate-400 cursor-pointer" href="#speaker">Speakers</a>
-          <a class="text-white hover:text-slate-400 focus:slate-400 cursor-pointer" href="#committee">Committee</a>
-          <a class="text-white hover:text-slate-400 focus:slate-400 cursor-pointer" href="#registration">Registration</a>
-          <a class="text-white hover:text-slate-400 focus:slate-400 cursor-pointer" href="#importatnt-date">Important Dates</a>
-        </div>
-        <div class="md:hidden">
-          <button class="text-white focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEMSMET 2025 Conference</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-slate-950 shadow-lg sticky top-0 z-50">
+      <div class="container mx-auto p-4">
+        <div class="flex md:justify-center items-center">
+          <div class="menu hidden md:flex space-x-6 items-center">
+            <a
+              class="text-white hover:text-slate-400 cursor-pointer"
+              href="#home"
+              >Home</a
+            >
+            <a
+              class="text-white hover:text-slate-400 cursor-pointer"
+              href="#about"
+              >About</a
+            >
+            <a
+              class="text-white hover:text-slate-400 cursor-pointer"
+              href="#call-for-papers"
+              >Call for Papers</a
+            >
+            <a
+              class="text-white hover:text-slate-400 cursor-pointer"
+              href="#speakers"
+              >Speakers</a
+            >
+            <a
+              class="text-white hover:text-slate-400 cursor-pointer"
+              href="#committee"
+              >Committee</a
+            >
+            <a
+              class="text-white hover:text-slate-400 cursor-pointer"
+              href="#registration"
+              >Registration</a
+            >
+            <a
+              class="text-white hover:text-slate-400 cursor-pointer"
+              href="#important-dates"
+              >Important Dates</a
+            >
+            <a
+              class="text-white hover:text-slate-400 cursor-pointer"
+              href="#contact"
+              >Contact</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-   <!-- Home -->
-   <section class="page" id="home">
-        <p>Home Page</p>
+    <!-- Home Section -->
+    <section
+      id="home"
+      class="page home relative flex justify-center items-center min-h-screen"
+    >
+      <!-- Background Image and Overlay -->
+      <div
+        class="absolute inset-0 bg-cover bg-center opacity-90"
+        style="background-image: url('../images/Conference-In-Delhi.jpg')"
+      ></div>
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <!-- Text Content -->
+      <div
+        class="relative z-10 text-center p-6 flex justify-center items-center"
+      >
+        <div class="w-[80%]">
+          <h1 class="text-white text-4xl md:text-6xl font-bold leading-tight">
+            2025 IEEE 4th International Conference on Technology, Engineering,
+            Management for Societal Impact using Marketing, Entrepreneurship,
+            and Talent (TEMSMET)
+          </h1>
+        </div>
+      </div>
     </section>
-    <!-- Home End -->
-    <!-- About -->
-    <section class="page" id="about">
-        <p>About Page</p>
-    </section>
-    <!-- About End -->
-    <!-- Speakers -->
-    <section class="page" id="speaker">
-        <p>Speaker Page</p>
-    </section>
-    <!-- Speakers End -->
-    <!-- Committee -->
-    <section class="page" id="committee">
-        <p>Committee Page</p>
-    </section>
-    <!-- Committee End -->
-    <!-- Registration -->
-    <section class="page" id="registration">
-        <p>Registration Page</p>
-    </section>
-    <!-- Registration End -->
-    <!-- Importatnt Dates -->
-    <section class="page" id="importatnt-date">
-        <p>Importatnt Dates</p>
-    </section>
-    <!-- Importatnt Dates End -->
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-4">
-    <div class="container mx-auto text-center">
-      <p>&copy; 2024 MyBrand. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- About Section -->
+    <section id="about" class="py-12 bg-white text-gray-800">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-6">Conference Theme</h2>
+        <p class="mb-4">
+          <strong
+            >“Technology Management and Innovation for Sustainable Development
+            in the era of Gen AI”</strong
+          ><br />
+          This theme focuses on the intersection of technology management,
+          innovation, and sustainable development within the context of the
+          rapidly advancing era of Generative Artificial Intelligence (Gen AI).
+        </p>
+        <h3 class="text-2xl font-bold mt-6">Key Concepts</h3>
+        <ul class="list-disc pl-6 mb-4">
+          <li>
+            <strong>Generative AI (Gen AI):</strong> AI systems that can create
+            new data, designs, or content mimicking human creativity.
+          </li>
+          <li>
+            <strong>Technology Management:</strong> Planning, development, and
+            implementation of technological innovations to achieve strategic
+            goals.
+          </li>
+          <li>
+            <strong>Innovation:</strong> Creating new ideas, products, or
+            methods that deliver value and solve global challenges.
+          </li>
+          <li>
+            <strong>Sustainable Development:</strong> Meeting the needs of the
+            present without compromising future generations.
+          </li>
+        </ul>
+      </div>
+    </section>
 
-</body>
+    <!-- Objectives Section -->
+    <section id="objectives" class="py-12 bg-gray-100 text-gray-800">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-6">Objectives</h2>
+        <ul class="list-disc pl-6">
+          <li>
+            To showcase the latest innovations in AI and their applications in
+            engineering and technology management.
+          </li>
+          <li>
+            To discuss the challenges and opportunities of integrating AI into
+            traditional engineering and management practices.
+          </li>
+          <li>
+            To explore strategic management practices that leverage AI to
+            enhance productivity and innovation.
+          </li>
+          <li>
+            To facilitate networking and collaboration among professionals,
+            academics, and industry leaders.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Call for Papers Section -->
+    <section id="call-for-papers" class="py-12 bg-white text-gray-800">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-6">Call for Papers</h2>
+        <p class="mb-4">
+          We invite submissions addressing innovative research, practical
+          applications, case studies, or theoretical advancements in AI,
+          technology, engineering, and management.
+        </p>
+        <p class="font-bold">Submission Deadline:</p>
+        <p>July 06, 2025</p>
+      </div>
+    </section>
+
+    <!-- Key Topics Section -->
+    <section id="key-topics" class="py-12 bg-gray-100 text-gray-800">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-6">Key Topics</h2>
+        <ul class="list-disc pl-6">
+          <li>
+            AI in Engineering and Technology: Case Studies and Applications
+          </li>
+          <li>
+            Managing AI-Driven Engineering Projects: Challenges and Solutions
+          </li>
+          <li>The Role of AI in Sustainable Engineering and Development</li>
+          <li>
+            Integrating AI into Engineering Design and Manufacturing Processes
+          </li>
+          <li>
+            Ethical AI and Its Impact on Engineering and Technology Management
+          </li>
+          <li>Data-Driven Decision Making in Technology Management</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Conference Structure -->
+    <section id="conference-structure" class="py-12 bg-white text-gray-800">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-6">Conference Structure</h2>
+        <ul class="list-disc pl-6">
+          <li>Keynote Speeches by renowned experts</li>
+          <li>Panel Discussions on AI ethics and engineering education</li>
+          <li>Technical Sessions on cutting-edge research and case studies</li>
+          <li>Workshops for hands-on engagement with AI tools</li>
+          <li>Poster Sessions for researchers and students</li>
+          <li>Networking Events for professionals across sectors</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="py-12 bg-gray-100 text-gray-800">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-6">Potential Speakers</h2>
+        <ul class="list-disc pl-6">
+          <li>Industry Leaders: CEOs, CTOs, and Innovation Officers</li>
+          <li>
+            Academics and Researchers: Professors and scholars specializing in
+            AI
+          </li>
+          <li>
+            Government Representatives: Policy makers in AI and technology
+            regulation
+          </li>
+          <li>Entrepreneurs: Founders of AI startups</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Important Dates Section -->
+    <section id="important-dates" class="py-12 bg-white text-gray-800">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-6">Important Dates</h2>
+        <p class="mb-4">
+          <strong>Conference Dates:</strong> November 06-07, 2025
+        </p>
+        <p>
+          <strong>Venue:</strong> National Institute of Technology, New Delhi,
+          India
+        </p>
+      </div>
+    </section>
+
+    <!-- Committee Section -->
+    <section id="committee" class="py-12 bg-gray-100 text-gray-800">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-6">Organizing Committee</h2>
+        <p><strong>Patron(s):</strong> Shri C. K. Birla</p>
+        <p><strong>Honorary Chair:</strong> Prof. (Dr.) Ajay K. Sharma</p>
+        <p><strong>General Chairs:</strong> Hocine Cherifi, Dr. Anurag Singh</p>
+        <!-- Add more committee members as required -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 MyBrand. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
