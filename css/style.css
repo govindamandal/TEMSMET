@@ -7,13 +7,13 @@ html {
 }
 
 section.home {
-    height: 600px;
+    height: 100vh;
 }
 
 section.page {
     padding: 20px;
     scroll-margin-top: 72;
-    min-height: 300px;
+    min-height: 100vh;
 }
 
 .hero-section {
@@ -29,3 +29,13 @@ section.page {
 .submenu-visible {
     display: block;
 }
+
+.gradient-text {
+    font-size: 4em;
+    font-weight: bold;
+    background: linear-gradient(90deg, #015b61, #0b0a35, #250aee);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
