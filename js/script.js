@@ -31,11 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
         nav: true,
         items: 1,
         autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        animateIn: 'fadeIn',  // or 'fadeInUp', 'fadeInDown', etc.
-        animateOut: 'fadeOut', // or 'fadeOutUp', 'fadeOutDown', etc.
-        navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+        autoplayTimeout: 5000,
+        smartSpeed: 1500,
+        navText: ["<i class='fas fa-2x fa-chevron-left'></i>", "<i class='fas fa-2x fa-chevron-right'></i>"],
         dots: false,
         responsive: {
           0: {
