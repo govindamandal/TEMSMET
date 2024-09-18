@@ -1,17 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const menuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuButton.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden");
+    });
+
+    // Submenu toggle for desktop (already existing logic)
     const aboutLink = document.getElementById("about-link");
     const aboutSubmenu = document.getElementById("about-submenu");
 
-    // Toggle submenu visibility on click
-    aboutLink.addEventListener("click", function (e) {
-        e.preventDefault(); // Prevent default link behavior
-        if (aboutSubmenu.classList.contains("submenu-visible")) {
-            aboutSubmenu.classList.remove("submenu-visible");
-            aboutSubmenu.classList.add("submenu-hidden");
-        } else {
-            aboutSubmenu.classList.remove("submenu-hidden");
-            aboutSubmenu.classList.add("submenu-visible");
-        }
+    aboutLink.addEventListener("click", function (event) {
+        event.preventDefault();
+        aboutSubmenu.classList.toggle("submenu-visible");
     });
 
     // Close the submenu if clicked outside
