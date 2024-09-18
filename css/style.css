@@ -2,8 +2,8 @@ html {
     scroll-behavior: smooth;
 }
 
-.menu a {
-    cursor: pointer;
+.navbar {
+    background: #00000073;
 }
 
 section.home {
@@ -16,26 +16,24 @@ section.page {
     min-height: 100vh;
 }
 
-.hero-section {
-    background-image: url('../images/Hero-BG-TEMSMET-2025.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .submenu-hidden {
     display: none;
 }
 
 .submenu-visible {
     display: block;
+    background: #00000073;
 }
 
 .gradient-text {
     font-size: 4em;
     font-weight: bold;
-    background: linear-gradient(90deg, #015b61, #0b0a35, #250aee);
+    background: linear-gradient(90deg, #fff, #00f, #00f);
     background-size: 200% 200%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-  }
+}
+.suttitle {
+    background: #00000073;
+}

@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const aboutLink = document.getElementById("about-link");
     const aboutSubmenu = document.getElementById("about-submenu");
-    console.log('aboutLink ', aboutLink);
-    
+
     // Toggle submenu visibility on click
     aboutLink.addEventListener("click", function (e) {
         e.preventDefault(); // Prevent default link behavior
@@ -21,5 +20,18 @@ document.addEventListener("DOMContentLoaded", function () {
             aboutSubmenu.classList.remove("submenu-visible");
             aboutSubmenu.classList.add("submenu-hidden");
         }
+    });
+
+    var swiper = new Swiper(".swiper-container", {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        speed: 1000,
+        effect: "slide",
+        fadeEffect: {
+            crossFade: true,
+        },
     });
 });
