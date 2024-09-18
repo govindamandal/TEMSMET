@@ -25,10 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const effects = ["slide", "cube", "fade", "coverflow"];
 
-    function getRandomEffect() {
-        return effects[Math.floor(Math.random() * effects.length)];
-    }
-
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
@@ -53,44 +49,4 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         }
       });
-
-    // let swiper = new Swiper(".swiper-container", {
-    //     loop: true,
-    //     autoplay: {
-    //         delay: 2000,
-    //         disableOnInteraction: false,
-    //     },
-    //     grabCursor: true,
-    //     slidesPerView: 1,
-    //     spaceBetween: 30,
-    //     speed: 1000,
-    //     effect: getRandomEffect(),
-    //     coverflowEffect: {
-    //         rotate: 50,
-    //         stretch: 0,
-    //         depth: 100,
-    //         modifier: 1,
-    //         slideShadows: true,
-    //     },
-    //     fadeEffect: {
-    //         crossFade: true,
-    //     },
-    //     on: {
-    //         init: function () {
-    //             console.log("Swiper initialized");
-    //           },
-    //           slideChange: function () {
-    //             console.log("Slide changed");
-    //           },
-    //           autoplayStop: function () {
-    //             console.log("Autoplay stopped, restarting...");
-    //             this.autoplay.start(); // Restart autoplay if stopped
-    //           },
-    //         slideChangeTransitionStart: function () {
-    //             var newEffect = getRandomEffect();
-    //             swiper.params.effect = newEffect;
-    //             swiper.update();
-    //         },
-    //     },
-    // });
 });
