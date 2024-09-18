@@ -6,6 +6,11 @@ html {
 .navbar {
     background: #00000073;
 }
+
+section.home {
+    height: 100vh;
+}
+
 .map-location {
     width: calc(100vw - 16px);
     max-width: 800px;
