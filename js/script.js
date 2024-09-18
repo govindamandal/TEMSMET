@@ -22,16 +22,36 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    var swiper = new Swiper(".swiper-container", {
+    const effects = ["slide", "fade", "coverflow"];
+
+    function getRandomEffect() {
+        return effects[Math.floor(Math.random() * effects.length)];
+    }
+
+    let swiper = new Swiper(".swiper-container", {
         loop: true,
         autoplay: {
-            delay: 3000,
+            delay: 5000,
             disableOnInteraction: false,
         },
         speed: 1000,
-        effect: "slide",
+        effect: getRandomEffect(),
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
         fadeEffect: {
             crossFade: true,
+        },
+        on: {
+            slideChangeTransitionStart: function () {
+                var newEffect = getRandomEffect();
+                swiper.params.effect = newEffect;
+                swiper.update();
+            },
         },
     });
 });
