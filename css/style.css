@@ -1,6 +1,5 @@
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 .navbar {
@@ -16,6 +15,7 @@ section.home {
     max-width: 800px;
     height: 64vh;
 }
+
 .submenu-hidden {
     display: none;
 }
@@ -34,6 +34,38 @@ section.home {
     background-clip: text;
     color: transparent;
 }
+
 .suttitle {
     background: #00000073;
+}
+
+.owl-carousel .item {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    /* Adjust based on your needs */
+}
+
+.owl-carousel .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
 }
