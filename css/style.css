@@ -2,8 +2,16 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .navbar {
     background: #00000073;
+}
+
+section {
+  scroll-margin-top: 60px;
 }
 
 section.home {
