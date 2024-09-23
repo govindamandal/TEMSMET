@@ -80,3 +80,9 @@ section.home {
     border-radius: 50%;
     padding: 10px;
 }
+
+@media only screen and (max-width: 430px){
+  section:not(.home) {
+    padding: 16px;
+  }
+}
